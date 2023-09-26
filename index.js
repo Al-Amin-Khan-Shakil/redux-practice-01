@@ -7,3 +7,17 @@ const orderCake = () => {
     quantity: 1
   }
 }
+
+const initialState = {
+  numOfCake: 10,
+}
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case CAKE_ORDERED:
+      return {
+        ...state,
+        numOfCake: state.numOfCake - 1,
+      }
+  }
+}
