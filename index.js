@@ -37,6 +37,7 @@ const restockIceCream = (qty) => {
 }
 
 const initialCakeState = {
+  item: "vanila",
   numOfCake: 10,
 }
 
